@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, Float, DateTime, Boolean, JSON
-from .database import Base
 from datetime import datetime
+from app.database import Base
+
 
 class UserData(Base):
     __tablename__ = "user_data"
@@ -54,3 +55,7 @@ class RiskAssessmentLog(Base):
     timestamp = Column(DateTime, default=datetime.utcnow)
     risk_score = Column(Float)
     factors = Column(JSON)
+    sync_start_time = Column(DateTime)
+    sync_end_time = Column(DateTime)
+    sync_status = Column(String)  # e.g., 'success', 'failure'
+    sync_error_message = Column(String)
