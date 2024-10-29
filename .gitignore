@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Credentials and sensitive files
+credentials.json
+token.pickle
+.env
+
+# Virtual environment and dependencies
+venv/
+env/
+*.egg-info/
+*.pyc
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+
+# Logs and temp files
+*.log
+*.temp
+app.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
